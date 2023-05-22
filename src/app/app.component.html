@@ -1,5 +1,9 @@
 <mat-toolbar color="primary">
-  <span>Angular Todo</span>
+  <span class="title">Angular Todo</span>
+  <span class="spacer"></span>
+  <button mat-icon-button class="example-icon" (click)="changeTheme()">
+    <mat-icon>{{isLight ? "dark_mode" : "light_mode"}}</mat-icon>
+  </button>
 </mat-toolbar>
 <app-todo-list></app-todo-list>
 <button (click)="openModal()" class="add-btn" mat-fab color="primary" aria-label="add Todo">
